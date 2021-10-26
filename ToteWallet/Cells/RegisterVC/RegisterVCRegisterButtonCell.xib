@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RegisterVCRegisterButtonCell" id="KGk-i7-Jjw" customClass="RegisterVCRegisterButtonCell" customModule="ToteWallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gEH-ZL-vx2">
+                        <rect key="frame" x="5" y="5" width="310" height="55"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ss-6r-YYv" customClass="RoundedButton" customModule="ToteWallet" customModuleProvider="target">
+                                <rect key="frame" x="85.5" y="9.5" width="139.5" height="36"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9Ss-6r-YYv" firstAttribute="centerX" secondItem="gEH-ZL-vx2" secondAttribute="centerX" id="1jk-OS-xzZ"/>
+                            <constraint firstItem="9Ss-6r-YYv" firstAttribute="centerY" secondItem="gEH-ZL-vx2" secondAttribute="centerY" id="Jxz-jh-jDD"/>
+                            <constraint firstItem="9Ss-6r-YYv" firstAttribute="height" secondItem="gEH-ZL-vx2" secondAttribute="height" multiplier="0.65" id="Pb3-Tx-DXm"/>
+                            <constraint firstItem="9Ss-6r-YYv" firstAttribute="width" secondItem="gEH-ZL-vx2" secondAttribute="width" multiplier="0.45" id="Tc1-8H-4mu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="gEH-ZL-vx2" secondAttribute="trailing" constant="5" id="R5g-Li-Wup"/>
+                    <constraint firstAttribute="bottom" secondItem="gEH-ZL-vx2" secondAttribute="bottom" constant="5" id="aQh-mP-I67"/>
+                    <constraint firstItem="gEH-ZL-vx2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="jAT-YV-0YJ"/>
+                    <constraint firstItem="gEH-ZL-vx2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="tdO-xB-iBw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btnRegister" destination="9Ss-6r-YYv" id="4hR-gF-h47"/>
+                <outlet property="vContent" destination="gEH-ZL-vx2" id="TWA-Rw-oz6"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="108"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="9Ss-6r-YYv">
+            <size key="intrinsicContentSize" width="66" height="32"/>
+        </designable>
+    </designables>
+</document>

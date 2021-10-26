@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14492.1" systemVersion="18G87" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDHeaderOptions" representedClassName="CDHeaderOptions" syncable="YES" codeGenerationType="class">
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="request" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDRequest" inverseName="requestheaders" inverseEntity="CDRequest" syncable="YES"/>
+    </entity>
+    <entity name="CDParam" representedClassName="CDParam" syncable="YES" codeGenerationType="class">
+        <attribute name="paramdata" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="parammime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="paramname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="paramvalue" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="request" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDRequest" inverseName="params" inverseEntity="CDRequest" syncable="YES"/>
+    </entity>
+    <entity name="CDRequest" representedClassName="CDRequest" syncable="YES" codeGenerationType="class">
+        <attribute name="r_data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="r_id" attributeType="Integer 64" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="r_method" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="r_persistent" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="r_processing" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="r_store" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="r_url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="params" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CDParam" inverseName="request" inverseEntity="CDParam" syncable="YES"/>
+        <relationship name="requestheaders" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CDHeaderOptions" inverseName="request" inverseEntity="CDHeaderOptions" syncable="YES"/>
+    </entity>
+    <entity name="StoreValidity" representedClassName="StoreValidity" syncable="YES" codeGenerationType="class">
+        <attribute name="expiry" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="loaded" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="synced" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CDHeaderOptions" positionX="115" positionY="236" width="128" height="88"/>
+        <element name="CDParam" positionX="-36" positionY="108" width="128" height="120"/>
+        <element name="CDRequest" positionX="160" positionY="72" width="128" height="180"/>
+        <element name="StoreValidity" positionX="0" positionY="153" width="128" height="105"/>
+    </elements>
+</model>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductPurchaseVCButtonCell" id="KGk-i7-Jjw" customClass="ProductPurchaseVCButtonCell" customModule="ToteWallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gEH-ZL-vx2">
+                        <rect key="frame" x="5" y="5" width="310" height="55"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="esj-Ur-DkO">
+                                <rect key="frame" x="23.5" y="7.5" width="263.5" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aER-vz-kae" customClass="RoundedButton" customModule="ToteWallet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="126.5" height="40"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ss-6r-YYv" customClass="RoundedButton" customModule="ToteWallet" customModuleProvider="target">
+                                        <rect key="frame" x="136.5" y="0.0" width="127" height="40"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Purchase">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="oeA-wX-btY"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="esj-Ur-DkO" firstAttribute="centerY" secondItem="gEH-ZL-vx2" secondAttribute="centerY" id="Eew-SA-3pd"/>
+                            <constraint firstItem="esj-Ur-DkO" firstAttribute="centerX" secondItem="gEH-ZL-vx2" secondAttribute="centerX" id="gfo-yY-ZHK"/>
+                            <constraint firstItem="esj-Ur-DkO" firstAttribute="width" secondItem="gEH-ZL-vx2" secondAttribute="width" multiplier="0.85" id="my0-Wb-b12"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="gEH-ZL-vx2" secondAttribute="trailing" constant="5" id="R5g-Li-Wup"/>
+                    <constraint firstAttribute="bottom" secondItem="gEH-ZL-vx2" secondAttribute="bottom" constant="5" id="aQh-mP-I67"/>
+                    <constraint firstItem="gEH-ZL-vx2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="jAT-YV-0YJ"/>
+                    <constraint firstItem="gEH-ZL-vx2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="tdO-xB-iBw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btnCancel" destination="aER-vz-kae" id="mUU-zf-P39"/>
+                <outlet property="btnPurchase" destination="9Ss-6r-YYv" id="Inv-be-lXK"/>
+                <outlet property="vContent" destination="gEH-ZL-vx2" id="TWA-Rw-oz6"/>
+            </connections>
+            <point key="canvasLocation" x="134.78260869565219" y="102.79017857142857"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="9Ss-6r-YYv">
+            <size key="intrinsicContentSize" width="69" height="30"/>
+        </designable>
+        <designable name="aER-vz-kae">
+            <size key="intrinsicContentSize" width="51" height="30"/>
+        </designable>
+    </designables>
+</document>

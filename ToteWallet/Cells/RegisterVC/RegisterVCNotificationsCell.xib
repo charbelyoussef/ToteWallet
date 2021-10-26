@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RegisterVCNotificationsCell" rowHeight="45" id="KGk-i7-Jjw" customClass="RegisterVCNotificationsCell" customModule="ToteWallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="373" height="45"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eRf-Xo-QoK">
+                        <rect key="frame" x="10" y="10" width="353" height="25"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fYu-8Z-o2t">
+                                <rect key="frame" x="196.5" y="0.0" width="78" height="25"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="- ">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="12"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Privacy Policy">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="12"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="voi-ot-RMz">
+                                <rect key="frame" x="93.5" y="0.0" width="98" height="25"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Terms &amp; Conditions">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="12"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Accept the" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7MN-Hl-Lk5">
+                                <rect key="frame" x="25" y="0.0" width="63.5" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ti1-RJ-GpG" customClass="CustomCheckBox" customModule="ToteWallet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="20" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="bdM-Oz-3Cl"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fYu-8Z-o2t" firstAttribute="leading" secondItem="voi-ot-RMz" secondAttribute="trailing" constant="5" id="3l9-zY-hdS"/>
+                            <constraint firstItem="Ti1-RJ-GpG" firstAttribute="leading" secondItem="eRf-Xo-QoK" secondAttribute="leading" id="6Us-4L-eJa"/>
+                            <constraint firstItem="voi-ot-RMz" firstAttribute="top" secondItem="eRf-Xo-QoK" secondAttribute="top" id="GIa-nK-HKX"/>
+                            <constraint firstAttribute="bottom" secondItem="voi-ot-RMz" secondAttribute="bottom" id="M0n-Ru-wO1"/>
+                            <constraint firstItem="7MN-Hl-Lk5" firstAttribute="leading" secondItem="Ti1-RJ-GpG" secondAttribute="trailing" constant="5" id="S2f-w7-vV5"/>
+                            <constraint firstAttribute="bottom" secondItem="Ti1-RJ-GpG" secondAttribute="bottom" id="SO6-en-ezq"/>
+                            <constraint firstAttribute="bottom" secondItem="fYu-8Z-o2t" secondAttribute="bottom" id="UDo-cI-wOn"/>
+                            <constraint firstItem="7MN-Hl-Lk5" firstAttribute="top" secondItem="eRf-Xo-QoK" secondAttribute="top" id="V7s-gx-qcL"/>
+                            <constraint firstAttribute="bottom" secondItem="Ti1-RJ-GpG" secondAttribute="bottom" id="l11-Qd-9gG"/>
+                            <constraint firstAttribute="bottom" secondItem="7MN-Hl-Lk5" secondAttribute="bottom" id="mnP-AT-wbD"/>
+                            <constraint firstItem="Ti1-RJ-GpG" firstAttribute="top" secondItem="eRf-Xo-QoK" secondAttribute="top" id="s8O-iN-WNZ"/>
+                            <constraint firstItem="voi-ot-RMz" firstAttribute="leading" secondItem="7MN-Hl-Lk5" secondAttribute="trailing" constant="5" id="up2-d4-ZNG"/>
+                            <constraint firstAttribute="height" constant="25" id="vPY-jd-dTY"/>
+                            <constraint firstItem="fYu-8Z-o2t" firstAttribute="top" secondItem="eRf-Xo-QoK" secondAttribute="top" id="yUc-eh-6iq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="eRf-Xo-QoK" secondAttribute="trailing" constant="10" id="Pg1-sp-Lbk"/>
+                    <constraint firstItem="eRf-Xo-QoK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="QKe-4X-9At"/>
+                    <constraint firstAttribute="bottom" secondItem="eRf-Xo-QoK" secondAttribute="bottom" constant="10" id="URv-1a-qvu"/>
+                    <constraint firstItem="eRf-Xo-QoK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="sdU-wE-mzf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnPrivacyPolicy" destination="Ti1-RJ-GpG" id="WkB-8H-ElP"/>
+                <outlet property="btnShowPrivacyDialog" destination="fYu-8Z-o2t" id="c3o-7T-hjF"/>
+                <outlet property="btnShowTermsAndConditions" destination="voi-ot-RMz" id="kLs-pI-pkf"/>
+            </connections>
+            <point key="canvasLocation" x="-83.333333333333343" y="266.85267857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

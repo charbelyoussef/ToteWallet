@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditProfileVCSelectionCell" rowHeight="65" id="KGk-i7-Jjw" customClass="EditProfileVCSelectionCell" customModule="ToteWallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dPi-Ko-rWS">
+                        <rect key="frame" x="5" y="5" width="325" height="55"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyn-JZ-dkX">
+                                <rect key="frame" x="0.0" y="0.0" width="325" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="qcY-wS-6oJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8l-gt-E6d" customClass="CustomSelectionButton" customModule="ToteWallet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="325" height="35"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="Select">
+                                    <color key="titleColor" systemColor="viewFlipsideBackgroundColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="P8l-gt-E6d" secondAttribute="bottom" id="K25-0Z-Cpf"/>
+                            <constraint firstItem="P8l-gt-E6d" firstAttribute="top" secondItem="wyn-JZ-dkX" secondAttribute="bottom" id="Kk0-ao-hlg"/>
+                            <constraint firstAttribute="trailing" secondItem="P8l-gt-E6d" secondAttribute="trailing" id="VSK-Yd-Tya"/>
+                            <constraint firstItem="P8l-gt-E6d" firstAttribute="leading" secondItem="dPi-Ko-rWS" secondAttribute="leading" id="cqt-Uv-N3x"/>
+                            <constraint firstItem="wyn-JZ-dkX" firstAttribute="top" secondItem="dPi-Ko-rWS" secondAttribute="top" id="kXs-AL-nJ3"/>
+                            <constraint firstItem="wyn-JZ-dkX" firstAttribute="leading" secondItem="dPi-Ko-rWS" secondAttribute="leading" id="uOo-QD-ETV"/>
+                            <constraint firstAttribute="trailing" secondItem="wyn-JZ-dkX" secondAttribute="trailing" id="zSm-0k-GKA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dPi-Ko-rWS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="HWi-lm-syA"/>
+                    <constraint firstAttribute="trailing" secondItem="dPi-Ko-rWS" secondAttribute="trailing" constant="5" id="Zd0-Il-wEQ"/>
+                    <constraint firstItem="dPi-Ko-rWS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="krI-lL-Qb6"/>
+                    <constraint firstAttribute="bottom" secondItem="dPi-Ko-rWS" secondAttribute="bottom" constant="5" id="uLG-Pg-OEG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btnSelection" destination="P8l-gt-E6d" id="AdF-s4-ihI"/>
+                <outlet property="lblTitle" destination="wyn-JZ-dkX" id="Ijl-BK-QKh"/>
+                <outlet property="vContent" destination="dPi-Ko-rWS" id="CR2-1Y-6Nn"/>
+            </connections>
+            <point key="canvasLocation" x="148.55072463768118" y="113.50446428571428"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="P8l-gt-E6d">
+            <size key="intrinsicContentSize" width="51" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.1215686274509804" green="0.12941176470588239" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

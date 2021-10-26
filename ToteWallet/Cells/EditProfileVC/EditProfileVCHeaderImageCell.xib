@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditProfileVCHeaderImageCell" rowHeight="150" id="KGk-i7-Jjw" customClass="EditProfileVCHeaderImageCell" customModule="ToteWallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID scan/image or Passport" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oag-GM-oSN">
+                        <rect key="frame" x="86" y="5" width="148.5" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="eCp-k9-n6M"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WrL-Cc-QgB">
+                        <rect key="frame" x="100" y="25" width="120" height="120"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="t2q-6x-Sa2" userLabel="IvProfile">
+                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Ntg-fb-PSN"/>
+                                    <constraint firstAttribute="width" constant="120" id="pUL-vd-wpf"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHa-fQ-ITo">
+                                <rect key="frame" x="85" y="95" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="M3A-zS-QjU"/>
+                                    <constraint firstAttribute="width" constant="25" id="wd6-vh-Ys7"/>
+                                </constraints>
+                                <state key="normal" image="pencil"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="t2q-6x-Sa2" secondAttribute="trailing" id="WDi-kA-LYP"/>
+                            <constraint firstItem="t2q-6x-Sa2" firstAttribute="top" secondItem="WrL-Cc-QgB" secondAttribute="top" id="Xyl-Fl-5KZ"/>
+                            <constraint firstAttribute="trailing" secondItem="NHa-fQ-ITo" secondAttribute="trailing" constant="10" id="ktm-4L-GDn"/>
+                            <constraint firstAttribute="bottom" secondItem="NHa-fQ-ITo" secondAttribute="bottom" id="o4Y-JN-F0b"/>
+                            <constraint firstAttribute="bottom" secondItem="t2q-6x-Sa2" secondAttribute="bottom" id="rGd-yu-xAW"/>
+                            <constraint firstItem="t2q-6x-Sa2" firstAttribute="leading" secondItem="WrL-Cc-QgB" secondAttribute="leading" id="vOa-Hv-9XA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WrL-Cc-QgB" firstAttribute="top" secondItem="oag-GM-oSN" secondAttribute="bottom" constant="5" id="0An-b0-ZBn"/>
+                    <constraint firstItem="oag-GM-oSN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="4r3-Wt-KcZ"/>
+                    <constraint firstItem="oag-GM-oSN" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Aco-Bx-wjz"/>
+                    <constraint firstItem="WrL-Cc-QgB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="UM3-pl-dli"/>
+                    <constraint firstAttribute="bottom" secondItem="WrL-Cc-QgB" secondAttribute="bottom" constant="5" id="tNg-5p-D8q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnChangePicture" destination="NHa-fQ-ITo" id="fKN-MC-X5K"/>
+                <outlet property="ivProfile" destination="t2q-6x-Sa2" id="zqM-iO-pUt"/>
+                <outlet property="lblTitle" destination="oag-GM-oSN" id="Dks-Iq-Fvj"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="181.47321428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pencil" width="150" height="150"/>
+        <image name="user" width="64" height="64"/>
+    </resources>
+</document>

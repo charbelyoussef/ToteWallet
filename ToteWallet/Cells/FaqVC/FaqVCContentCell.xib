@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="FaqVCContentCell" rowHeight="98" id="KGk-i7-Jjw" customClass="FaqVCContentCell" customModule="ToteWallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="328" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DR9-gx-dlw">
+                        <rect key="frame" x="5" y="5" width="318" height="140"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n9b-wo-1vv" userLabel="vHeaderContainer">
+                                <rect key="frame" x="10" y="0.0" width="298" height="49"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHY COLLABORATE WITH FUTURE CROWD FARMING" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzT-d2-riG">
+                                        <rect key="frame" x="0.0" y="5" width="298" height="39"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="13"/>
+                                        <color key="textColor" red="0.41176470588235292" green="0.40392156862745099" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="vzT-d2-riG" secondAttribute="bottom" constant="5" id="5zj-54-xtp"/>
+                                    <constraint firstAttribute="trailing" secondItem="vzT-d2-riG" secondAttribute="trailing" id="blL-RG-A5l"/>
+                                    <constraint firstItem="vzT-d2-riG" firstAttribute="top" secondItem="n9b-wo-1vv" secondAttribute="top" constant="5" id="diV-0H-xHG"/>
+                                    <constraint firstItem="vzT-d2-riG" firstAttribute="leading" secondItem="n9b-wo-1vv" secondAttribute="leading" id="tfm-sM-nqT"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Win your choice of Breakfast,  Brunch or Sunday  Lunch at  any bruncher.com venue pls a luxury overnight stay!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D24-a0-D4p">
+                                <rect key="frame" x="10" y="63" width="298" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.45098039215686275" green="0.45098039215686275" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9j-1k-Amf">
+                                <rect key="frame" x="243" y="115" width="65" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="RJF-p6-Orr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="13"/>
+                                <state key="normal" title="Read More">
+                                    <color key="titleColor" red="0.97647058819999999" green="0.77647058820000003" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m17-h1-p4i">
+                                <rect key="frame" x="10" y="49" width="298" height="4"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.77647058820000003" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="6QH-Q9-7NN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="m17-h1-p4i" firstAttribute="leading" secondItem="DR9-gx-dlw" secondAttribute="leading" constant="10" id="1Pq-nK-u6O"/>
+                            <constraint firstAttribute="trailing" secondItem="n9b-wo-1vv" secondAttribute="trailing" constant="10" id="Ilv-qx-O1a"/>
+                            <constraint firstItem="m17-h1-p4i" firstAttribute="top" secondItem="n9b-wo-1vv" secondAttribute="bottom" id="LUU-Vc-2tD"/>
+                            <constraint firstItem="q9j-1k-Amf" firstAttribute="top" secondItem="D24-a0-D4p" secondAttribute="bottom" constant="5" id="NIo-sJ-nih"/>
+                            <constraint firstAttribute="bottom" secondItem="q9j-1k-Amf" secondAttribute="bottom" constant="5" id="Rpi-al-5pf"/>
+                            <constraint firstItem="D24-a0-D4p" firstAttribute="leading" secondItem="DR9-gx-dlw" secondAttribute="leading" constant="10" id="TYs-Nw-uAz"/>
+                            <constraint firstItem="D24-a0-D4p" firstAttribute="top" secondItem="m17-h1-p4i" secondAttribute="bottom" constant="10" id="XR8-yW-WZO"/>
+                            <constraint firstAttribute="trailing" secondItem="q9j-1k-Amf" secondAttribute="trailing" constant="10" id="dQJ-XO-XPg"/>
+                            <constraint firstItem="n9b-wo-1vv" firstAttribute="leading" secondItem="DR9-gx-dlw" secondAttribute="leading" constant="10" id="kxl-Ni-7JH"/>
+                            <constraint firstAttribute="trailing" secondItem="m17-h1-p4i" secondAttribute="trailing" constant="10" id="nLX-PG-Evs"/>
+                            <constraint firstAttribute="trailing" secondItem="D24-a0-D4p" secondAttribute="trailing" constant="10" id="o9O-xG-QaN"/>
+                            <constraint firstItem="n9b-wo-1vv" firstAttribute="top" secondItem="DR9-gx-dlw" secondAttribute="top" id="rsI-yw-n7Y"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="DR9-gx-dlw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Gac-7y-p3a"/>
+                    <constraint firstAttribute="bottom" secondItem="DR9-gx-dlw" secondAttribute="bottom" constant="5" id="OFP-wO-Fux"/>
+                    <constraint firstItem="DR9-gx-dlw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="fcc-yL-QKz"/>
+                    <constraint firstAttribute="trailing" secondItem="DR9-gx-dlw" secondAttribute="trailing" constant="5" id="r6a-j7-TBe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnExpand" destination="q9j-1k-Amf" id="PXm-1Z-kb1"/>
+                <outlet property="constBtnReadMoreHeight" destination="RJF-p6-Orr" id="bzh-aO-QA9"/>
+                <outlet property="lblDescription" destination="D24-a0-D4p" id="aAX-Ld-nLh"/>
+                <outlet property="lblTitle" destination="vzT-d2-riG" id="p8S-J1-k01"/>
+                <outlet property="vContainerView" destination="DR9-gx-dlw" id="0S6-bf-jk7"/>
+                <outlet property="vSeparator" destination="m17-h1-p4i" id="xJU-LX-3RT"/>
+            </connections>
+            <point key="canvasLocation" x="40.579710144927539" y="-68.303571428571431"/>
+        </tableViewCell>
+    </objects>
+</document>

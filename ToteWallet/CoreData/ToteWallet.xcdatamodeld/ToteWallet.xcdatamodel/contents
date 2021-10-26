@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D80" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Alert" representedClassName="Alert" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="message" optional="YES" attributeType="String"/>
+        <attribute name="targetId" optional="YES" attributeType="String"/>
+        <attribute name="targetName" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="AppConfiguration" representedClassName="AppConfiguration" syncable="YES" codeGenerationType="class">
+        <attribute name="codeWithName" optional="YES" attributeType="String"/>
+        <attribute name="countryId" optional="YES" attributeType="String"/>
+        <attribute name="countryName" optional="YES" attributeType="String"/>
+        <attribute name="phoneCountryCode" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="BuyTips" representedClassName="BuyTips" syncable="YES" codeGenerationType="class">
+        <attribute name="errorUrl" optional="YES" attributeType="String"/>
+        <attribute name="paymentUrl" optional="YES" attributeType="String"/>
+        <attribute name="successUrl" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="City" representedClassName="City" syncable="YES" codeGenerationType="class">
+        <attribute name="countryId" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Configuration" representedClassName="Configuration" syncable="YES" codeGenerationType="class">
+        <attribute name="backgroundUrl" optional="YES" attributeType="String"/>
+        <attribute name="colour" optional="YES" attributeType="String"/>
+        <attribute name="font" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="logoUrl" optional="YES" attributeType="String"/>
+        <attribute name="privacyPolicyUrl" optional="YES" attributeType="String"/>
+        <attribute name="tint" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Country" representedClassName="Country" syncable="YES" codeGenerationType="class">
+        <attribute name="codeWithName" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="phoneCode" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Faq" representedClassName="Faq" syncable="YES" codeGenerationType="class">
+        <attribute name="answer" optional="YES" attributeType="String"/>
+        <attribute name="faqId" optional="YES" attributeType="String"/>
+        <attribute name="question" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Login" representedClassName="Login" syncable="YES" codeGenerationType="class">
+        <attribute name="address1" optional="YES" attributeType="String"/>
+        <attribute name="address2" optional="YES" attributeType="String"/>
+        <attribute name="address3" optional="YES" attributeType="String"/>
+        <attribute name="address4" optional="YES" attributeType="String"/>
+        <attribute name="birthdate" optional="YES" attributeType="String"/>
+        <attribute name="cityName" optional="YES" attributeType="String"/>
+        <attribute name="confirmPassword" optional="YES" attributeType="String"/>
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="countryCode" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="countryName" optional="YES" attributeType="String"/>
+        <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="detailsAddress" optional="YES" attributeType="String"/>
+        <attribute name="detailsCityId" optional="YES" attributeType="String"/>
+        <attribute name="detailsCountryId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="detailsIdNationalityId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="detailsIdNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="detailsIdTypeId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="detailsIdTypeName" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="fullName" optional="YES" attributeType="String"/>
+        <attribute name="gender" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="genderName" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="idImageUrl" optional="YES" attributeType="String"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="loginToken" optional="YES" attributeType="String"/>
+        <attribute name="membershipType" optional="YES" attributeType="String"/>
+        <attribute name="modificationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="notificationsCheck" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="pin" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="province" optional="YES" attributeType="String"/>
+        <attribute name="resetPin" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="resetToken" optional="YES" attributeType="String"/>
+        <attribute name="tel" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+        <attribute name="wsse" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="LoyaltyProgram" representedClassName="LoyaltyProgram" syncable="YES" codeGenerationType="class">
+        <attribute name="colorHex" optional="YES" attributeType="String"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="identifier" optional="YES" attributeType="String"/>
+        <attribute name="imageFile" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="priceMode" optional="YES" attributeType="String"/>
+        <attribute name="productTypeName" optional="YES" attributeType="String"/>
+        <attribute name="settingsDiscount" optional="YES" attributeType="String"/>
+        <attribute name="settingsPrice" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="MarketplaceCategory" representedClassName="MarketplaceCategory" syncable="YES" codeGenerationType="class">
+        <attribute name="hasChildren" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="imageFile" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="parentId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="MarketplaceProduct" representedClassName="MarketplaceProduct" syncable="YES" codeGenerationType="class">
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="String"/>
+        <attribute name="imageFile" optional="YES" attributeType="String"/>
+        <attribute name="isDeliverable" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="priceMode" optional="YES" attributeType="String"/>
+        <attribute name="productTypeName" optional="YES" attributeType="String"/>
+        <attribute name="settingsDiscount" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="settingsPrice" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="MarketplaceProvider" representedClassName="MarketplaceProvider" syncable="YES" codeGenerationType="class">
+        <attribute name="hasChildren" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="imageFile" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="parentId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="MyProgram" representedClassName="MyProgram" syncable="YES" codeGenerationType="class">
+        <attribute name="activationDate" optional="YES" attributeType="String"/>
+        <attribute name="balance" optional="YES" attributeType="String"/>
+        <attribute name="isActive" optional="YES" attributeType="String"/>
+        <attribute name="isSellable" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="joinDate" optional="YES" attributeType="String"/>
+        <attribute name="lastInvitationDate" optional="YES" attributeType="String"/>
+        <attribute name="level" optional="YES" attributeType="String"/>
+        <attribute name="myProgramId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="productId" optional="YES" attributeType="String"/>
+        <attribute name="productName" optional="YES" attributeType="String"/>
+        <attribute name="quantity" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
+        <attribute name="urlDetails" optional="YES" attributeType="String"/>
+        <attribute name="urlReferral" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="OzowFee" representedClassName="OzowFee" syncable="YES" codeGenerationType="class">
+        <attribute name="ozowFees" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="PendingRequest" representedClassName="PendingRequest" syncable="YES" codeGenerationType="class">
+        <attribute name="baseAmount" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="pendingRequestId" optional="YES" attributeType="String"/>
+        <attribute name="receiverOwnerName" optional="YES" attributeType="String"/>
+        <attribute name="receiverOwnerUsername" optional="YES" attributeType="String"/>
+        <attribute name="senderPhoneNumber" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="statusName" optional="YES" attributeType="String"/>
+        <attribute name="timeZoneCode" optional="YES" attributeType="String"/>
+        <attribute name="token" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="ProfileSettings" representedClassName="ProfileSettings" syncable="YES" codeGenerationType="class">
+        <attribute name="cashbackSymbol" optional="YES" attributeType="String"/>
+        <attribute name="cashbackValue" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="commissionSymbol" optional="YES" attributeType="String"/>
+        <attribute name="commissionValue" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="creditInterestSymbol" optional="YES" attributeType="String"/>
+        <attribute name="creditInterestValue" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="creditLimitSymbol" optional="YES" attributeType="String"/>
+        <attribute name="creditLimitValue" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="feesSymbol" optional="YES" attributeType="String"/>
+        <attribute name="feesValue" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="pointsSymbol" optional="YES" attributeType="String"/>
+        <attribute name="pointsValue" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="preferredCurrencyId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="primaryWalletId" optional="YES" attributeType="String"/>
+        <attribute name="registrationSymbol" optional="YES" attributeType="String"/>
+        <attribute name="registrationValue" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="smsNotification" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="smsSymbol" optional="YES" attributeType="String"/>
+        <attribute name="smsValue" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Program" representedClassName="Program" syncable="YES" codeGenerationType="class">
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="detailsUrl" optional="YES" attributeType="String"/>
+        <attribute name="gain" optional="YES" attributeType="String"/>
+        <attribute name="grow" optional="YES" attributeType="String"/>
+        <attribute name="iconFile" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="imageFile" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="percentage" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="settingsPrice" optional="YES" attributeType="String"/>
+        <attribute name="stock" optional="YES" attributeType="String"/>
+        <attribute name="totalIn" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Settings" representedClassName="Settings" syncable="YES" codeGenerationType="class">
+        <attribute name="receiveNotificationBySms" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="sms_money_received" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="sms_money_sent" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="sms_product_purchased" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Title" representedClassName="Title" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Transaction" representedClassName="Transaction" syncable="YES" codeGenerationType="class">
+        <attribute name="balance" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="baseAmount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="receiverOwnerName" optional="YES" attributeType="String"/>
+        <attribute name="ref" optional="YES" attributeType="String"/>
+        <attribute name="senderCurrencySymbol" optional="YES" attributeType="String"/>
+        <attribute name="senderOwnerName" optional="YES" attributeType="String"/>
+        <attribute name="timeZoneCode" optional="YES" attributeType="String"/>
+        <attribute name="transactionId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Wallet" representedClassName="Wallet" syncable="YES" codeGenerationType="class">
+        <attribute name="adminDailyBalance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="adminDailyLimit" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="adminMonthlyBalance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="adminMonthlyLimit" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="adminYearlyBalance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="adminYearlyLimit" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="alias" optional="YES" attributeType="String"/>
+        <attribute name="balance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="creditLimit" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="currencyIsoCode" optional="YES" attributeType="String"/>
+        <attribute name="dailyBalance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="dailyLimit" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="isRemovable" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="monthlyBalance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="monthlyLimit" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="roundedBalance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="statusCode" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="walletId" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Alert" positionX="-36" positionY="144" width="128" height="118"/>
+        <element name="AppConfiguration" positionX="-36" positionY="144" width="128" height="103"/>
+        <element name="BuyTips" positionX="-36" positionY="144" width="128" height="88"/>
+        <element name="City" positionX="-27" positionY="162" width="128" height="88"/>
+        <element name="Configuration" positionX="-45" positionY="153" width="128" height="148"/>
+        <element name="Country" positionX="-54" positionY="144" width="128" height="103"/>
+        <element name="Faq" positionX="-27" positionY="153" width="128" height="88"/>
+        <element name="Login" positionX="-54" positionY="-9" width="128" height="629"/>
+        <element name="LoyaltyProgram" positionX="-36" positionY="144" width="128" height="193"/>
+        <element name="MarketplaceCategory" positionX="-27" positionY="153" width="128" height="118"/>
+        <element name="MarketplaceProduct" positionX="-18" positionY="162" width="128" height="193"/>
+        <element name="MarketplaceProvider" positionX="-36" positionY="144" width="128" height="118"/>
+        <element name="MyProgram" positionX="-36" positionY="144" width="128" height="239"/>
+        <element name="OzowFee" positionX="-36" positionY="144" width="128" height="58"/>
+        <element name="PendingRequest" positionX="-36" positionY="144" width="128" height="194"/>
+        <element name="ProfileSettings" positionX="-36" positionY="144" width="128" height="328"/>
+        <element name="Program" positionX="-36" positionY="144" width="128" height="223"/>
+        <element name="Settings" positionX="-36" positionY="144" width="128" height="103"/>
+        <element name="Title" positionX="-36" positionY="144" width="128" height="73"/>
+        <element name="Transaction" positionX="-36" positionY="144" width="128" height="179"/>
+        <element name="Wallet" positionX="-36" positionY="144" width="128" height="328"/>
+    </elements>
+</model>
